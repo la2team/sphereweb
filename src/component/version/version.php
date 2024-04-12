@@ -9,7 +9,7 @@ namespace Ofey\Logan22\component\version;
 
 class version {
 
-    private const MIN_PHP_VERSION = 8.2;
+    private const MIN_PHP_VERSION = 8.1;
 
     public static function check_version_php() : void {
         if ((float) PHP_VERSION < self::MIN_PHP_VERSION()) {
