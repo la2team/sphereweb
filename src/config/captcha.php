@@ -1,12 +1,12 @@
 <?php
 
-// Укажите какую версию капчи использовать
-// их две либо google либо default
-// Если Вы решите использовать Google reCAPTCHA V3
-// Гугл капчу ключи брать тут - https://www.google.com/recaptcha/about/ в разделе "v3 Admin Console"
-const CAPTCHA = "default";
+// Indicate which version of captcha to use
+// There are two of them either Google or Default
+// if you decide to use Google Recaptcha v3
+// Google Kapchu Keys Take here - https://www.google.com/recaptchas/about/ in the section "V3 Admin Console"
+const CAPTCHA = "google";
 
-// Для гугл капчи
+// for Google Kapchi
 const GOOGLE_CLIENT_KEY = "";
 const GOOGLE_SERVER_KEY = "";
 
