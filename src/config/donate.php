@@ -2,65 +2,65 @@
 
 /**
  *
- * Это курс валюты
- * Соотношение 1 Донат Бонус к разной валюте.
+ * This is a currency course
+ * Ratio 1 donate bonus to different currency.
  *
- * Если человек закинул 300 рублей, он получит 3,95
+ * If a person threw 300 rubles, he will receive 3.95
  *
- * Если не понимаете тонкости настроек, лучше оставить всё как есть.
+ * If you do not understand the subtleties of the settings, it is better to leave everything as it is.
  *
  */
 
 const __config__donate = [
 
-    //Какая платежная система будет выбрана по умолчанию
+    //Which payment system will be selected by default
     'pay_system_default' => 'freekassa',
 
 
     /**
-     * Минимальное количество донат бонусов, которое пользователь может купить.
+     * The minimum number of bonuses that the user can buy.
      */
     'min_donate_bonus_coin' => 100,
 
-    //Максимальное количество дб, которое пользователь может купить за раз
+    //The maximum amount of dB that the user can buy at a time
     'max_donate_bonus_coin' => 5000,
 
-    //Количество донат бонусов, которые получит пользователь за сумму равную 1 доллару
-    //К примеру если quantity = 10, тогда за донат в 1 доллар пользователь получит 10 Донат Бонус
-    //Если quanity поставить 100, тогда пользователь получит 100 донат бонусов за донат в сумме который равен 1$
+    //The number of bonuses that the user will receive for the amount equal to 1 dollar will receive
+    //for example, if Quantity = 10, then for a donat of $ 1, the user will receive 10 donat bonus
+    //If you find100, then he will be used by 10Donatbonusovusadonatvsummekotnye equal1 $
     'quantity' => 100,
 
-    //Если не понимаете эти коэффициенты валют, то лучше не менять, оставить как есть.
+    //If you do not understand these currencies, then it is better not to change, leave it as it is.
     'coefficient' => [
-        //Если пользователь закинет 1$ = получит 1 Донат Бонусов (если quantity = 1)
+        //If the user throws 1 $ = receives 1 donat of bonuses (if quantity = 1)
         'USD' => 1,
-        //Если пользователь закидыват 42 евро = получит 26,25 ДБ
+        //If the user is thrown 42 euros = receives 26.25 dB
         'EUR' => 1.05,
-        //Если пользователь закидыват 377 грн = получит 10,21 ДБ
+        //If the user is thrown 377 UAH = receives 10.21 dB
         'UAH' => 38.5,
-        //Если человек закинул 300 руб, он получит 3,95
+        //If a person threw 300 rubles, he will receive 3.95
         'RUB' => 100,
     ],
 
 
     /**
-     * Различные скидки
+     * Various discounts
      */
 
     /**
-     * Накопительная система скидок
-     *
-     * Работает таким образом
-     * Мы считает скидку исходя из того, сколько всего купил Донат Коины пользователь за всё время действия его профиля.
-     * К примеру человек донатил и донатил, и в результате у него набралось 23419 Донат Бонуса,
-     * это даст ему при следующем пожертвовании бонус 25% Донат бонусов дополнительно.
+    * The accumulative system of discounts
+    *
+    * Works in this way
+    * We consider a discount on how much the user bought the Donat Coina for the entire time of his profile.
+    * For example, a man donated and donated, and as a result, he had 23419 Donat Bonus,
+    * This will give him at the next donation of a bonus of 25% of the bonuses additionally.
      */
 
-    //Включить накопительную систему скидок ?
+    //Turn on the accumulative system of discounts?
     'DONATE_DISCOUNT_TYPE_STORAGE' => false,
     'discount' => [
         'table' => [
-            //от 500 ДБ дает 3% бонус
+            //from 500 dB gives 3% bonus
             500 => 3,
             1000 => 5,
             1500 => 8,
@@ -69,28 +69,28 @@ const __config__donate = [
             5000 => 15,
             9000 => 18,
             13000 => 20,
-            //от 15.000 ДБ дает 15% бонус
+            //from 15,000 dB gives 15% bonus
             15000 => 22,
             20000 => 25,
             25000 => 27,
-            //Любая сумма выше 30.000 дает 30% бонус
+            //Any amount above 30,000 gives 30% bonus
             30000 => 30,
         ],
     ],
 
 
     /**
-     * Единоразовый бонус при пополнении.
-     * Работает так: Пользователь донатит и купил 50 Донат Коинов (сфера коин),
-     * тогда ему дается ещё дополнительно N% донок от кол-ва покупаемых Донат Коинов.
-     * Пример: Пользователь купил 2789 донок что согласно таблицы - 10%, таким образом пользователь
-     * получает бонус 250 Донат Коинов.
-     */
-    // Включить/Выключить разовый бонус пополнения
+    * One -time bonus when replenishing.
+    * Works like this: the user is donated and bought 50 Donat Koinov (Koin sphere),
+    * Then he is also given an additional N% of donat from the bought donat Koinov.
+    * Example: the user bought 2789 donk that according to the table - 10%, so the user
+    * receives a bonus 250 Donat Koinov.
+    */
+    // Turn on/off a one -time replenish bonus
     'ONE_TIME_REPLENISHMENT_BONUS_ENABLE' => false,
     'one_time_discount' => [
         'table' => [
-            //Сумма => процент единоразового бонуса
+            //Sum => percentage of one -time bonus
             500 => 3,
             1000 => 5,
             1500 => 8,
@@ -102,21 +102,21 @@ const __config__donate = [
             15000 => 22,
             20000 => 25,
             25000 => 27,
-            //Любая сумма выше 30.000 дает 30% бонус
+            //Any amount above 30,000 gives 30% bonus
             30000 => 30,
         ],
     ],
 
 
     /**
-     * Система скидок на покупку товара (предмета) в магазине
-     */
-    //Включить систему скидок на товары ?
+    * System of discounts on the purchase of goods (item) in the store
+    */
+    //Turn on the system of discounts on goods?
     'DONATE_DISCOUNT_TYPE_PRODUCT_ENABLE' => false,
 
-    // Таблица скидок на товары
-    // И даем ему скидку на покупку исходя из общей суммы Донат Бонусов.
-    // Если пользователь задонатил больше чем 1500 и меньше чем 2000 - тогда скидка будет 8%
+    // Discount table
+    // And we give him a discount on the purchase based on the total amount of the bonuses.
+    // If the user has a bore more than 1500 or less than 2000 - then the discount will be 8%
     'discount_product' => [
         'table' => [
             500 => 1,
@@ -136,14 +136,14 @@ const __config__donate = [
 
 
     /**
-     * Разовые скидки
+     * One -time discounts
      *
-     * Если пользователь покупает больше N кол-во шт., тогда он получает скидку на покупку.
+     * If the user buys more N number of pcs. Then he receives a discount on the purchase.
      */
-    //Включить разовые скидки ?
+    //Turn on one -time discounts?
     'DONATE_DISCOUNT_COUNT_ENABLE' => false,
     'discount_count_product' => [
-        //Если покупаеют 5 штук и больше, тогда скидка 3%
+        //If you buy 5 pieces and more, then the 3% discount
         'table' => [
             5 => 3,
             8 => 7,
@@ -152,24 +152,24 @@ const __config__donate = [
             20 => 14,
             25 => 15,
         ],
-        // Список id предметов, которые пользователь может купить со скидкой, если пусто, то для всех предметов
-        // К примеру 57, 728 (тогда скидка разрешена только для этих предметов)
+        // List of ID items that the user can buy at a discount, if empty, then for all objects
+        // For example 57, 728 (then the discount is allowed only for these items)
         'items' => [
         ],
     ],
 
-    //Вкл/Выкл выдачи бонусов за донат
+    //ON/Off of Bonuses for Donat
     'DONATE_BONUS_ITEM_ENABLE' => false,
     'donate_bonus_list' => [
 
         [
-            //Если пользователь единоразово задонил свыше 500 SphereCoin
-            'sc' => 500, // Кол-во SphereCoin, которое было зачислено
+            //If the user has a one -time one over 500 spherecoin
+            'sc' => 500, // The number of Spherecoin, which was credited
             'items' => [
                 [
-                    'id' => 57,  // Выдаваемый ID предмета
-                    'count' => 1000, // Кол-во
-                    'enchant' => 0, // Уровень заточки
+                    'id' => 57,  // Issued item ID
+                    'count' => 1000, // Quantity
+                    'enchant' => 0, // Sharpening level
                 ],
                 [
                     'id' => 17,

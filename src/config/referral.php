@@ -1,15 +1,15 @@
 <?php
-//Минимальное время игры - 3 часа
+//The minimum game time is 3 hours
 const GAME_TIME = 3600*3;
-//Минимальный уровень
+//Minimum level
 const LEVEL = 80;
 const PVP = 1;
 const PK = 1;
-//Сколько донат бонусов давать
+//How many bonuses to give
 const DONATE_BONUS_AMOUNT = 20;
 
-// Если человек завлек игроков, которые зарегистрировались по его реферальной ссылке.
-// Давать ли Sphere-Coin лидеру, если пришлашенный им пользователь пополняет себе баланс?
+// If a person has brought the players who registered by his referral link.
+// Should Sphere-Coin give the leader if the user he received replenishes his balance?
 const REFERRAL_LEADER_BONUS_ENABLE = true;
-// Какой процент с пополнения Sphere-Coin давать лидеру реферала
+/
 const REFERRAL_LEADER_BONUS_VALUE = 10;

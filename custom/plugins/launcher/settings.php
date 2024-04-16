@@ -6,9 +6,9 @@ return [
     "PLUGIN_VERSION" => "2.0.2",
     "PLUGIN_AUTHOR" => "Logan22",
     "PLUGIN_GITHUB" => "",
-    "PLUGIN_DESCRIPTION" => "Официальный лаунчер проекта Sphere",
+    "PLUGIN_DESCRIPTION" => "Official launcher of the Sphere project",
     "PLUGIN_ADMIN_PAGE" => "/admin/launcher",
-    "PLUGIN_ADMIN_PAGE_NAME" => "Лаунчер",
+    "PLUGIN_ADMIN_PAGE_NAME" => "Launcher",
     "PLUGIN_ADMIN_PAGE_ICON" => "fa fa-users",
 
     "PLUGIN_USER_PAGE" => "/launcher",
