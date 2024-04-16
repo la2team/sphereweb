@@ -5,8 +5,8 @@ const FORUM_PASSWORD = '';
 const FORUM_NAME = '';
 const FORUM_CHARSET = 'utf8';
 //xenforo / ipb / sphere
-const FORUM_ENGINE = 'xenforo';
-const FORUM_URL = 'http://xenforo';
+const FORUM_ENGINE = 'sphere';
+const FORUM_URL = '/forum';
 
 // for the inner forum
 // Max.The number of topics created in 1 hour
