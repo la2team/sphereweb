@@ -1,21 +1,21 @@
 <?php
-//Включить реферальную систему ?
-const ENABLE_REFERRAL = true;
+//Turn on the referral system?
+const ENABLE_REFERRAL = false;
 
-//Включить систему тикетов ?
+//Enable the tiket system ?
 const ENABLE_TICKET = true;
 
-//Включить систему галлерей ?
+//Turn on the gallery system ?
 const ENABLE_GALLERY = true;
 
-//Включить систему пожертвований ?
+//Turn on the donation system ?
 const ENABLE_DONATE = true;
 
-//Включить в меню раздел - Новости ?
+//Turn on the section - News in the menu ?
 const ENABLE_NEWS = true;
 
-//Включить форум
+//Turn on the forum
 const ENABLE_FORUM = true;
 
-//Разрешить пользователям пересылать свои SphereCoin другим пользователям
+//Allow users to send their Spherecoin to other users
 const ENABLE_SPHERECOIN_TRANSFER = true;

@@ -1,7 +1,7 @@
 <?php
 /**
- * Языки, которые будут использоваться на сайте
- * Названия языка должно соответствовать названию файла в src/components/lang/package
+ * Languages that will be used on the site
+ * Language names should correspond to the name of the file in SRC/Components/Lang/Package
  */
 
 const LANG_DEFAULT = 'en';

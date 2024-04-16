@@ -6,7 +6,7 @@ return [
     "PLUGIN_VERSION" => "1.0.0",
     "PLUGIN_AUTHOR" => "Logan22",
     "PLUGIN_GITHUB" => "",
-    "PLUGIN_DESCRIPTION" => "Плагин обратного отсчета до старта сервера и отображение времени со старта",
+    "PLUGIN_DESCRIPTION" => "Foundation plugin to the start of the server and display of time from the start",
     "PLUGIN_ADMIN_PAGE" => "/admin/plugin#",
     "PLUGIN_ADMIN_PAGE_NAME" => "countdown",
     "PLUGIN_ADMIN_PAGE_ICON" => "fa fa-users",

@@ -26,7 +26,7 @@ const AUTO_RELOAD = true;
 
 // hide player passwords
 // is necessary in case you have a client with autologue and you use the launcher
-const SAVE_ACCOUNT_PASSWORD = false;
+const SAVE_ACCOUNT_PASSWORD = true;
 
 // site for maintenance.
 // We turn off the site and display the message that the site is on technical service
@@ -37,16 +37,16 @@ const TECHNICAL_WORK = false;
 const TECHNICAL_WORK_TIME_UP = "21:00 - 22.07.2025";
 
 // project logo, this is an inscription or a small image that is displayed at the very top of the page on the left.
-const LOGO_PROJECT = "<i class='fa fa-fire text-primary'></i><span class='fs-4 text-dual'>Sphere</span><span class='fs-4 text-primary'>Web</span>" ;
+const LOGO_PROJECT = "</i><span class='fs-4 text-dual'>Interlud</span><span class='fs-4 text-primary'>essence</span>" ;
 
 // title of title page (first /)
 const TITLE = [
-    "en" => "Welcome to the World of Essence.",
+    "en" => "New Era of Interlude!",
 ];
 
 // Description of the main page
 const DESCRIPTION = [
-    "en" => "New Era of Interlude!",
+    "en" => "Welcome to the World of Interlude-Essence.",
 ];
 
 const KEYWORDS = "L2 сервер, Игровой сервер L2, PvP сервер, Новый сервер, High Five сервер, Бесплатный сервер L2, L2 скачать, CMS SphereWeb, MMORPG, L22Clan, Get-Web.Site,
