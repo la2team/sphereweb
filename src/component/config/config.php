@@ -17,8 +17,8 @@ class config
     private static int $max_count_all_screenshots = 0;
     private static bool $forum_enable = false;
     /*
-     * Бонусная выплата доната
-     * Процент от суммы пополнения доната, который будет зачислен игроку
+     * Bonus payment of donate
+     * Percentage of the amount of replenishment of the Donat, which will be enlisted to the player
      */
     private static ?float $donation_bonus_payout = 0;
     private static bool $enable_referral = true;
@@ -44,7 +44,7 @@ class config
 
     }
 
-    //Загрузка включенных и выключенных функций
+    //Loading on and off functions
     private static function loadEnable(): void {
         self::$enable_referral = ENABLE_REFERRAL;
         self::$enable_ticket = ENABLE_TICKET;
@@ -54,7 +54,7 @@ class config
         self::$enable_forum = ENABLE_FORUM;
     }
 
-    // Возвращает название используемой капчи
+    //Returns the name of the captcha used
     public static function get_captcha_version($checkCaptchaName = null): string|bool|null {
         if(self::$captcha===null){
             if (defined('CAPTCHA')) {

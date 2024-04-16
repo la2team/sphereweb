@@ -1,7 +1,6 @@
 <?php
 /**
- * Загружать ли пользователю файл с его данными после успешной регистрации
- */
+* Do the user upload a file with its data after successful registration */
 
 const ENABLE_REGISTRATION_FILE = true;
 

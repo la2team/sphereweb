@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Требовать от админа код подтверждения авторизации ?
- * Этот код потребуется после входа в учетную запись администратора
+ * Demand the authorization confirmation code from the admin?
+ * This code will be required after entering the administrator account
  */
 const IS_ADMIN_CONFIRMATION_CODE = false;
 
 /**
- * Коды доступа, которые понадобятся чтоб пропустить администратора.
- * Адмнистратору потребуется ввести любой код из массива
+ * Access codes that will be needed to skip the administrator
+ * The administrator will need to enter any code from the array
  */
 const ADMIN_CODES_AUTH = [
     '123$567',
