@@ -6,7 +6,7 @@ return [
     "PLUGIN_VERSION" => "1.0.0",
     "PLUGIN_AUTHOR" => "Logan22",
     "PLUGIN_GITHUB" => "",
-    "PLUGIN_DESCRIPTION" => "Plugin for sending coins to the game",
+    "PLUGIN_DESCRIPTION" => "Плагин для отправки коинов в игру",
     "PLUGIN_ADMIN_PAGE" => "/admin/plugin#",
     "PLUGIN_ADMIN_PAGE_NAME" => "Coin To Game",
     "PLUGIN_ADMIN_PAGE_ICON" => "fa fa-users",

@@ -5,8 +5,8 @@ const FORUM_PASSWORD = '';
 const FORUM_NAME = '';
 const FORUM_CHARSET = 'utf8';
 //xenforo / ipb / sphere
-const FORUM_ENGINE = 'sphere';
-const FORUM_URL = '/forum';
+const FORUM_ENGINE = 'xenforo';
+const FORUM_URL = 'http://xenforo';
 
 // Для внутреннего форума
 // Макс. кол-во создаваемых тем за 1 час

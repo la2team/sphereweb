@@ -1,15 +1,15 @@
 <?php
 /**
-* System protection system from theft
- * When registering, the user can choose a prefix or suffix to the account
- * We do not oblige the user to use this protection, only at his request.
+ * Система защиты аккаунтов от кражи
+ * При регистрации пользователь может выбрать префикс или суффикс к аккаунту
+ * Мы не обязываем пользователя обязательно использовать данную защиту, только по его желанию.
  */
 
 const __config__prefix = [
-// Turn on the system of prefixes-Suffixes
-    // True - Turn on /FALSE - turn off
+    //Включить систему префиксов-суффиксов
+    //true - включить / false - выключить
     'enable' => true,
-// Prefix adds symbols sj_login to the beginning
-    // sufix adds to the end of the word symbols Login_sj
+    //prefix добавляет в начало символы Sj_login
+    //suffix добавляет в конец слова символы login_Sj
     'type' => 'prefix',
 ];

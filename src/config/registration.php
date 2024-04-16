@@ -1,9 +1,9 @@
 <?php
 /**
-* Registration
+ * Регистрация
  */
 
-// Option of registration
-// Register massively game accounts (on all connected servers): True
-// or register a game account only on the selected user server: FALSE
+// Вариант регистрации
+// Регистрировать массиво игровые аккаунты (на всех подключенных серверах) : true
+// или регистрировать игровой аккаунт только на выбранном пользователе сервере : false
 const MASS_REGISTRATION = true;

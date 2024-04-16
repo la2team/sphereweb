@@ -1,29 +1,29 @@
 <?php
 /**
- * Config of online wrappers
+ * Конфиг накрутки онлайна
  */
 
-//Turn on/off online wrapping
+//Включить/выключить накрутку онлайна
 const ONLINE_CHEATING_ENABLE = false;
 
-//How much to display (random) minimum and maximum number of online (in case online 0)
-//If you want to be online always 0 If online is really 0, then install Min and Max 0
+//Сколько выводить (рандом) минимальное и максимальное кол-во онлайна (на случай если онлайн 0)
+//Если хотите чтоб онлайн был всегда 0 если онлайн действительно 0, то установите min и max 0
 const ONLINE_CHEATING_MIN_MAX_ONLINE = [
     'min' => 15,
     'max' => 25,
 ];
 
 /*
-* Street wrapping online allows you to softer and believablely configure the output online
- * If online 0, then online will be taken from the table below
-*
- * Number of online => [Time => Online wrapping coefficient]
+ * Табличная накрутка онлайна, позволяет более мягко и правдоподобно настроить выводимый онлайн
+ * Если онлайн 0, то онлайн будет взят из таблицы ниже
  *
- * For example: online 37 people, time now 10:57
+ * Кол-во онлайна => [ время => коэффициент накрутки онлайна ]
  *
- * Note: 37 people are between 30 and 60, and time 10:57 is between 10:00 and 12:00
- * This corresponds to the coefficient of online wrapping 3.15
- * 37* 3.15 = 116.55 online, the result will be rounded to a larger number, thus we get 117 online.
+ * К примеру: Онлайн 37 человек, время сейчас 10:57
+ * Тогда коэффициент накрутки онлайна будет 3.15
+ * Примечание: 37 человек - это между 30 и 60, а время 10:57 - это между 10:00 и 12:00
+ * Это соответствует коэффициенту накрутки онлайна 3.15
+ * 37*3.15 = 116.55 онлайна, результат будет округляем до большего числа, таким образом получим 117 онлайна.
  */
 const cheat_online = [
     1 => [

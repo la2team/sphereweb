@@ -14,5 +14,5 @@ const max_count_all_screenshots = 500;
 
 const forum_enable = true;
 
-//Show a sphere picture instead of a coin
+//Показывать ли картинку сферы вместо монетки
 const show_image_sphere_coin = true;
