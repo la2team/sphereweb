@@ -6,7 +6,7 @@ return [
     "PLUGIN_VERSION" => "1.0.0",
     "PLUGIN_AUTHOR" => "Logan22",
     "PLUGIN_GITHUB" => "",
-    "PLUGIN_DESCRIPTION" => "Plugin for the sale of packs",
+    "PLUGIN_DESCRIPTION" => "Плагин для продажи паков",
     "PLUGIN_ADMIN_PAGE" => "/startpack",
     "PLUGIN_ADMIN_PAGE_NAME" => "Pack Plugin",
     "PLUGIN_ADMIN_PAGE_ICON" => "fa fa-users",

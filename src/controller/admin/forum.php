@@ -24,7 +24,7 @@ class forum {
     }
 
     /**
-     * Preservation of the forum settings
+     * Сохранение настроек форума
      */
     public static function save() {
         validation::user_protection("admin");
