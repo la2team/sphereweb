@@ -8,6 +8,6 @@ const FORUM_CHARSET = 'utf8';
 const FORUM_ENGINE = 'xenforo';
 const FORUM_URL = 'http://xenforo';
 
-// Для внутреннего форума
-// Макс. кол-во создаваемых тем за 1 час
+// for the inner forum
+// Max.The number of topics created in 1 hour
 const MAX_COUNT_CREATE_THREAD_IN_HOUR = 10;
