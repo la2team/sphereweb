@@ -6,7 +6,7 @@ const LEVEL = 80;
 const PVP = 1;
 const PK = 1;
 //How many bonuses to give
-const DONATE_BONUS_AMOUNT = 20;
+const DONATE_BONUS_AMOUNT = 20; 
 
 // If a person entered the players who registered at his referral link.
 // Should Sphere-Coin give the leader if the user he received replenishes his balance?
